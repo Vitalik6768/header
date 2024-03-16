@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    /* padding: 20px 0;  */
+    text-align: center;
+    padding-top: 20px;
+    height: 100px;
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* MEGA MENUE */
+
+.megamenu {
+    display: none;
+    background-color: blueviolet;
+    padding: 20px;
+     /* Adjusted to show as dropdown */
+    z-index: 111;
+    position: absolute;
+    width: 70%;
+    min-height: 20%;
+
+    
+
+
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+
+/* a:hover + .megamenu {
+    display: block;
+    
+} */
+
+
+
+
+
+
+.div1 {
+    background-color: blue;
+    display: none;
+}
+
+.div2 {
+    display: none;
+    background-color: rgb(255, 0, 140);
+}
+
+
+
+
+.link-container {
+    position: relative;
+    display: inline-block; /* Adjust as needed */
+ 
+    
+}
+
+.triangle {
+    display: none;
+
+    width: 0;
+    height: 0;
+    margin-left: 30%;
+    border-left: 10px solid transparent; /* Smaller width for left border */
+    border-right: 10px solid transparent; /* Smaller width for right border */
+    border-bottom: 20px solid blueviolet; /* Smaller width for bottom border */
+}
+
+.link-container:hover .triangle{
+    display: block;
+}
+
+.link-container:hover + .megamenu{
+    display: block;
+}
+
+
+
+
+.content-container {
+    display: flex; /* This makes it a flex container, aligning children inline by default */
+    flex-wrap: wrap; /* This allows the items to wrap onto the next line if there's not enough space */
+    gap: 20px; /* Adds some space between the items */
+
+}
+
+.content-container div, .content-container h1, .content-container p {
+    margin: 0; /* Removes default margins */
+    padding: 5px; /* Adds some padding inside each element */
+}
